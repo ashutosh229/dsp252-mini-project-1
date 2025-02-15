@@ -16,7 +16,7 @@ const analysisSteps = [
     subsections: [
       {
         title: "Data Sources",
-        points: ["Internet", "GitHub", "Public Datasets", "API Integration"],
+        points: ["Internet", "Kaggle", "Github"],
       },
     ],
   },
@@ -28,10 +28,10 @@ const analysisSteps = [
       {
         title: "Cleaning Steps",
         points: [
+          "Numerical Data Scaling",
+          "Categorical Data Encoding",
           "Missing Value Treatment",
-          "Outlier Detection",
-          "Data Normalization",
-          "Feature Engineering",
+          "Outlier Detection and Treatment",
         ],
       },
     ],
@@ -44,7 +44,8 @@ const analysisSteps = [
       {
         title: "Analysis Methods",
         points: [
-          "Statistical Summary",
+          "Columns Analysis",
+          "Statistical Analysis",
           "Distribution Analysis",
           "Pattern Recognition",
           "Trend Identification",
@@ -63,7 +64,6 @@ const analysisSteps = [
           "Regression Models",
           "Classification Models",
           "Clustering Algorithms",
-          "Time Series Analysis",
         ],
       },
     ],
@@ -79,7 +79,7 @@ const analysisSteps = [
           "Interactive Plots",
           "Statistical Graphs",
           "Correlation Maps",
-          "Time Series Charts",
+          "Cluster Plots",
         ],
       },
     ],
@@ -94,7 +94,6 @@ const analysisSteps = [
         points: [
           "Pattern Discovery",
           "Predictive Insights",
-          "Business Recommendations",
           "Future Directions",
         ],
       },
