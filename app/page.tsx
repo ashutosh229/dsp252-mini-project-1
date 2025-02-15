@@ -1,5 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Database, FileSearch, Brain, ChartBar, LineChart, Filter } from "lucide-react";
+import {
+  Database,
+  FileSearch,
+  Brain,
+  ChartBar,
+  LineChart,
+  Filter,
+} from "lucide-react";
 
 const analysisSteps = [
   {
@@ -9,9 +16,9 @@ const analysisSteps = [
     subsections: [
       {
         title: "Data Sources",
-        points: ["Internet", "GitHub", "Public Datasets", "API Integration"]
-      }
-    ]
+        points: ["Internet", "GitHub", "Public Datasets", "API Integration"],
+      },
+    ],
   },
   {
     title: "Data Preprocessing",
@@ -20,9 +27,14 @@ const analysisSteps = [
     subsections: [
       {
         title: "Cleaning Steps",
-        points: ["Missing Value Treatment", "Outlier Detection", "Data Normalization", "Feature Engineering"]
-      }
-    ]
+        points: [
+          "Missing Value Treatment",
+          "Outlier Detection",
+          "Data Normalization",
+          "Feature Engineering",
+        ],
+      },
+    ],
   },
   {
     title: "Exploratory Analysis",
@@ -31,9 +43,14 @@ const analysisSteps = [
     subsections: [
       {
         title: "Analysis Methods",
-        points: ["Statistical Summary", "Distribution Analysis", "Pattern Recognition", "Trend Identification"]
-      }
-    ]
+        points: [
+          "Statistical Summary",
+          "Distribution Analysis",
+          "Pattern Recognition",
+          "Trend Identification",
+        ],
+      },
+    ],
   },
   {
     title: "Data Modeling",
@@ -42,9 +59,14 @@ const analysisSteps = [
     subsections: [
       {
         title: "Model Types",
-        points: ["Regression Models", "Classification Models", "Clustering Algorithms", "Time Series Analysis"]
-      }
-    ]
+        points: [
+          "Regression Models",
+          "Classification Models",
+          "Clustering Algorithms",
+          "Time Series Analysis",
+        ],
+      },
+    ],
   },
   {
     title: "Visualization",
@@ -53,9 +75,14 @@ const analysisSteps = [
     subsections: [
       {
         title: "Chart Types",
-        points: ["Interactive Plots", "Statistical Graphs", "Correlation Maps", "Time Series Charts"]
-      }
-    ]
+        points: [
+          "Interactive Plots",
+          "Statistical Graphs",
+          "Correlation Maps",
+          "Time Series Charts",
+        ],
+      },
+    ],
   },
   {
     title: "Results & Insights",
@@ -64,10 +91,15 @@ const analysisSteps = [
     subsections: [
       {
         title: "Key Findings",
-        points: ["Pattern Discovery", "Predictive Insights", "Business Recommendations", "Future Directions"]
-      }
-    ]
-  }
+        points: [
+          "Pattern Discovery",
+          "Predictive Insights",
+          "Business Recommendations",
+          "Future Directions",
+        ],
+      },
+    ],
+  },
 ];
 
 export default function Home() {
@@ -86,25 +118,37 @@ export default function Home() {
         {analysisSteps.map((step, index) => {
           const Icon = step.icon;
           return (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 bg-secondary/50 backdrop-blur-sm border-primary/20">
+            <Card
+              key={index}
+              className="group hover:shadow-lg transition-all duration-300 hover:scale-105 bg-secondary/50 backdrop-blur-sm border-primary/20"
+            >
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="p-2 rounded-lg bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <CardTitle className="text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2">{step.title}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{step.subtitle}</p>
+                    <CardTitle className="text-xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2">
+                      {step.title}
+                    </CardTitle>
+                    <p className="text-sm text-muted-foreground">
+                      {step.subtitle}
+                    </p>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 {step.subsections.map((subsection, subIndex) => (
                   <div key={subIndex} className="mt-4">
-                    <h3 className="font-semibold mb-2 text-foreground/90">{subsection.title}</h3>
+                    <h3 className="font-semibold mb-2 text-foreground/90">
+                      {subsection.title}
+                    </h3>
                     <ul className="space-y-1">
                       {subsection.points.map((point, pointIndex) => (
-                        <li key={pointIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <li
+                          key={pointIndex}
+                          className="flex items-center gap-2 text-sm text-muted-foreground"
+                        >
                           <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                           {point}
                         </li>
