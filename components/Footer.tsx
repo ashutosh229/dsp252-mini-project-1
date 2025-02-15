@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Twitter, ArrowUp } from "lucide-react";
@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Footer() {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -23,47 +23,20 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              asChild
-              className="hover:bg-primary/20 hover:text-primary"
-            >
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button variant="ghost" size="icon" asChild className="hover:bg-primary/20 hover:text-primary">
+              <Link href="https://github.com" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5" />
                 <span className="sr-only">Github</span>
               </Link>
             </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              asChild
-              className="hover:bg-primary/20 hover:text-primary"
-            >
-              <Link
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button variant="ghost" size="icon" asChild className="hover:bg-primary/20 hover:text-primary">
+              <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
             </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              asChild
-              className="hover:bg-primary/20 hover:text-primary"
-            >
-              <Link
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button variant="ghost" size="icon" asChild className="hover:bg-primary/20 hover:text-primary">
+              <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                 <Twitter className="w-5 h-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
