@@ -59,13 +59,13 @@ export default function Header() {
 
           <div className="flex gap-4">
             <Button variant="outline" asChild className="bg-secondary/50 hover:bg-secondary backdrop-blur-sm border-primary/20">
-              <Link href="https://colab.research.google.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Link href="https://colab.research.google.com/drive/1mdawzSTKxJPxwCAOjWy5sp-2SDZTYOvV?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Database className="w-4 h-4" />
                 View Google Colab Notebook
               </Link>
             </Button>
             <Button variant="outline" asChild className="bg-secondary/50 hover:bg-secondary backdrop-blur-sm border-primary/20">
-              <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <Link href="https://github.com/ashutosh229/dsp252-mini-project-1" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Github className="w-4 h-4" />
                 View Github Repository
               </Link>

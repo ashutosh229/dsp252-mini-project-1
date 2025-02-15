@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Panic Attacks Analysis",
-  description: "Comprehensive Data Analysis and Vi",
+  description: "A website comprising of the data analytics",
   icons: "/title_icon.jpg",
 };
 
