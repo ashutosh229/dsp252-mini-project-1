@@ -33,7 +33,7 @@ const analysisCards = [
     image: "/images/analysis/pie-chart.jpg", // Replace with actual image path
   },
   {
-    title: "Trend Comparison",
+    title: "Count v/s Cluster Analysis",
     subtitle: "Actual vs Predicted Values",
     icon: Activity,
     points: [
@@ -44,7 +44,7 @@ const analysisCards = [
     image: "/images/analysis/cluster.jpg", // Replace with actual image path
   },
   {
-    title: "Trend Comparison",
+    title: "Contour Analysis",
     subtitle: "Actual vs Predicted Values",
     icon: Activity,
     points: [
