@@ -1,12 +1,18 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, PieChart as PieChartIcon, Activity, Lightbulb } from "lucide-react";
+import {
+  TrendingUp,
+  PieChart as PieChartIcon,
+  Activity,
+  Lightbulb,
+} from "lucide-react";
 
 const analysisCards = [
   {
     title: "Statistical Analysis",
-    subtitle: "Analysis of multiple statistical parameters like mean and median, using box plot",
+    subtitle:
+      "Analysis of multiple statistical parameters like mean and median, using box plot",
     icon: TrendingUp,
     points: [
       "Consistent upward trend observed",
@@ -48,7 +54,6 @@ const analysisCards = [
     ],
     image: "/images/analysis/countour.jpg", // Replace with actual image path
   },
-
 ];
 
 const keyInsights = [
@@ -89,7 +94,9 @@ export default function AnalysisPage() {
                     <CardTitle className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2">
                       {card.title}
                     </CardTitle>
-                    <p className="text-sm text-muted-foreground">{card.subtitle}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {card.subtitle}
+                    </p>
                   </div>
                 </div>
               </CardHeader>
@@ -112,7 +119,11 @@ export default function AnalysisPage() {
                     </ul>
                   </div>
                   <div className="bg-card/50 rounded-lg p-4 flex justify-center">
-                    <img src={card.image} alt={card.title} className="rounded-lg shadow-md" />
+                    <img
+                      src={card.image}
+                      alt={card.title}
+                      className="rounded-lg shadow-md"
+                    />
                   </div>
                 </div>
               </CardContent>
