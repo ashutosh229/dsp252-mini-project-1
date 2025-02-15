@@ -1,14 +1,15 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Data Analytics Project',
-  description: 'Comprehensive Data Analysis and Visualization',
+  title: "Panic Attacks Analysis",
+  description: "Comprehensive Data Analysis and Vi",
+  icons: "/title_icon.jpg",
 };
 
 export default function RootLayout({
@@ -20,9 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="min-h-screen pt-[240px] pb-16">
-          {children}
-        </main>
+        <main className="min-h-screen pt-[240px] pb-16">{children}</main>
         <Footer />
       </body>
     </html>
