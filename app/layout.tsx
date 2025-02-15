@@ -7,9 +7,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Panic Attacks Analysis",
-  description: "A website comprising of the data analytics",
-  icons: "/title_icon.jpg",
+  title: "Data Analytics Project",
+  description: "Comprehensive Data Analysis and Visualization",
 };
 
 export default function RootLayout({

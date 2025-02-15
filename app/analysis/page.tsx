@@ -1,31 +1,53 @@
-'use client';
+"use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { LineChart, Line, BarChart, Bar, PieChart, Pie, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { FileBarChart, TrendingUp, PieChart as PieChartIcon, Activity, Brain, Lightbulb } from "lucide-react";
+import {
+  LineChart,
+  Line,
+  BarChart,
+  Bar,
+  PieChart,
+  Pie,
+  AreaChart,
+  Area,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
+import {
+  FileBarChart,
+  TrendingUp,
+  PieChart as PieChartIcon,
+  Activity,
+  Brain,
+  Lightbulb,
+} from "lucide-react";
 
 const sampleTimeSeriesData = [
-  { month: 'Jan', value: 1000 },
-  { month: 'Feb', value: 2000 },
-  { month: 'Mar', value: 1500 },
-  { month: 'Apr', value: 3000 },
-  { month: 'May', value: 2500 },
-  { month: 'Jun', value: 4000 },
+  { month: "Jan", value: 1000 },
+  { month: "Feb", value: 2000 },
+  { month: "Mar", value: 1500 },
+  { month: "Apr", value: 3000 },
+  { month: "May", value: 2500 },
+  { month: "Jun", value: 4000 },
 ];
 
 const sampleDistributionData = [
-  { category: 'A', value: 30 },
-  { category: 'B', value: 45 },
-  { category: 'C', value: 25 },
+  { category: "A", value: 30 },
+  { category: "B", value: 45 },
+  { category: "C", value: 25 },
 ];
 
 const sampleTrendData = [
-  { date: '2023-01', actual: 4000, predicted: 4200 },
-  { date: '2023-02', actual: 4500, predicted: 4300 },
-  { date: '2023-03', actual: 4200, predicted: 4400 },
-  { date: '2023-04', actual: 4800, predicted: 4600 },
-  { date: '2023-05', actual: 4600, predicted: 4800 },
-  { date: '2023-06', actual: 5000, predicted: 5000 },
+  { date: "2023-01", actual: 4000, predicted: 4200 },
+  { date: "2023-02", actual: 4500, predicted: 4300 },
+  { date: "2023-03", actual: 4200, predicted: 4400 },
+  { date: "2023-04", actual: 4800, predicted: 4600 },
+  { date: "2023-05", actual: 4600, predicted: 4800 },
+  { date: "2023-06", actual: 5000, predicted: 5000 },
 ];
 
 const analysisCards = [
@@ -36,45 +58,53 @@ const analysisCards = [
     points: [
       "Consistent upward trend observed",
       "Seasonal patterns identified",
-      "Peak performance in June"
+      "Peak performance in June",
     ],
     chart: (
       <ResponsiveContainer width="100%" height={300}>
         <AreaChart data={sampleTimeSeriesData}>
           <defs>
             <linearGradient id="colorValue" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="hsl(var(--chart-1))" stopOpacity={0.8}/>
-              <stop offset="95%" stopColor="hsl(var(--chart-1))" stopOpacity={0}/>
+              <stop
+                offset="5%"
+                stopColor="hsl(var(--chart-1))"
+                stopOpacity={0.8}
+              />
+              <stop
+                offset="95%"
+                stopColor="hsl(var(--chart-1))"
+                stopOpacity={0}
+              />
             </linearGradient>
           </defs>
           <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--muted))" />
-          <XAxis 
+          <XAxis
             dataKey="month"
-            tick={{ fill: 'hsl(var(--muted-foreground))' }}
-            axisLine={{ stroke: 'hsl(var(--muted-foreground))' }}
-            tickLine={{ stroke: 'hsl(var(--muted-foreground))' }}
+            tick={{ fill: "hsl(var(--muted-foreground))" }}
+            axisLine={{ stroke: "hsl(var(--muted-foreground))" }}
+            tickLine={{ stroke: "hsl(var(--muted-foreground))" }}
           />
-          <YAxis 
-            tick={{ fill: 'hsl(var(--muted-foreground))' }}
-            axisLine={{ stroke: 'hsl(var(--muted-foreground))' }}
-            tickLine={{ stroke: 'hsl(var(--muted-foreground))' }}
+          <YAxis
+            tick={{ fill: "hsl(var(--muted-foreground))" }}
+            axisLine={{ stroke: "hsl(var(--muted-foreground))" }}
+            tickLine={{ stroke: "hsl(var(--muted-foreground))" }}
           />
-          <Tooltip 
-            contentStyle={{ 
-              backgroundColor: 'hsl(var(--background))',
-              borderColor: 'hsl(var(--border))'
+          <Tooltip
+            contentStyle={{
+              backgroundColor: "hsl(var(--background))",
+              borderColor: "hsl(var(--border))",
             }}
           />
-          <Area 
-            type="monotone" 
-            dataKey="value" 
-            stroke="hsl(var(--chart-1))" 
+          <Area
+            type="monotone"
+            dataKey="value"
+            stroke="hsl(var(--chart-1))"
             fill="url(#colorValue)"
             fillOpacity={1}
           />
         </AreaChart>
       </ResponsiveContainer>
-    )
+    ),
   },
   {
     title: "Distribution Analysis",
@@ -83,7 +113,7 @@ const analysisCards = [
     points: [
       "Category B shows highest proportion",
       "Even distribution across segments",
-      "Minimal outliers detected"
+      "Minimal outliers detected",
     ],
     chart: (
       <ResponsiveContainer width="100%" height={300}>
@@ -98,16 +128,16 @@ const analysisCards = [
             paddingAngle={5}
             dataKey="value"
           />
-          <Tooltip 
-            contentStyle={{ 
-              backgroundColor: 'hsl(var(--background))',
-              borderColor: 'hsl(var(--border))'
+          <Tooltip
+            contentStyle={{
+              backgroundColor: "hsl(var(--background))",
+              borderColor: "hsl(var(--border))",
             }}
           />
           <Legend />
         </PieChart>
       </ResponsiveContainer>
-    )
+    ),
   },
   {
     title: "Trend Comparison",
@@ -116,46 +146,46 @@ const analysisCards = [
     points: [
       "Strong correlation between actual and predicted",
       "Prediction accuracy improving over time",
-      "Minimal deviation from expected values"
+      "Minimal deviation from expected values",
     ],
     chart: (
       <ResponsiveContainer width="100%" height={300}>
         <LineChart data={sampleTrendData}>
           <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--muted))" />
-          <XAxis 
+          <XAxis
             dataKey="date"
-            tick={{ fill: 'hsl(var(--muted-foreground))' }}
-            axisLine={{ stroke: 'hsl(var(--muted-foreground))' }}
-            tickLine={{ stroke: 'hsl(var(--muted-foreground))' }}
+            tick={{ fill: "hsl(var(--muted-foreground))" }}
+            axisLine={{ stroke: "hsl(var(--muted-foreground))" }}
+            tickLine={{ stroke: "hsl(var(--muted-foreground))" }}
           />
-          <YAxis 
-            tick={{ fill: 'hsl(var(--muted-foreground))' }}
-            axisLine={{ stroke: 'hsl(var(--muted-foreground))' }}
-            tickLine={{ stroke: 'hsl(var(--muted-foreground))' }}
+          <YAxis
+            tick={{ fill: "hsl(var(--muted-foreground))" }}
+            axisLine={{ stroke: "hsl(var(--muted-foreground))" }}
+            tickLine={{ stroke: "hsl(var(--muted-foreground))" }}
           />
-          <Tooltip 
-            contentStyle={{ 
-              backgroundColor: 'hsl(var(--background))',
-              borderColor: 'hsl(var(--border))'
+          <Tooltip
+            contentStyle={{
+              backgroundColor: "hsl(var(--background))",
+              borderColor: "hsl(var(--border))",
             }}
           />
           <Legend />
-          <Line 
-            type="monotone" 
-            dataKey="actual" 
-            stroke="hsl(var(--chart-3))" 
+          <Line
+            type="monotone"
+            dataKey="actual"
+            stroke="hsl(var(--chart-3))"
             activeDot={{ r: 8 }}
           />
-          <Line 
-            type="monotone" 
-            dataKey="predicted" 
-            stroke="hsl(var(--chart-4))" 
+          <Line
+            type="monotone"
+            dataKey="predicted"
+            stroke="hsl(var(--chart-4))"
             activeDot={{ r: 8 }}
           />
         </LineChart>
       </ResponsiveContainer>
-    )
-  }
+    ),
+  },
 ];
 
 const keyInsights = [
@@ -164,7 +194,7 @@ const keyInsights = [
   "Distribution shows normal characteristics",
   "Prediction model shows 95% accuracy",
   "Outliers detected and handled appropriately",
-  "Significant trends observed in monthly data"
+  "Significant trends observed in monthly data",
 ];
 
 export default function AnalysisPage() {
@@ -183,7 +213,10 @@ export default function AnalysisPage() {
         {analysisCards.map((card, index) => {
           const Icon = card.icon;
           return (
-            <Card key={index} className="w-full bg-secondary/50 backdrop-blur-sm border-primary/20 hover:shadow-lg transition-all duration-300">
+            <Card
+              key={index}
+              className="w-full bg-secondary/50 backdrop-blur-sm border-primary/20 hover:shadow-lg transition-all duration-300"
+            >
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="p-2 rounded-lg bg-primary/10">
@@ -193,26 +226,31 @@ export default function AnalysisPage() {
                     <CardTitle className="text-2xl bg-clip-text text-transparent bg-gradient-to-r from-primary to-chart-2">
                       {card.title}
                     </CardTitle>
-                    <p className="text-sm text-muted-foreground">{card.subtitle}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {card.subtitle}
+                    </p>
                   </div>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   <div className="space-y-4">
-                    <h3 className="font-semibold text-lg text-foreground/90">Key Observations</h3>
+                    <h3 className="font-semibold text-lg text-foreground/90">
+                      Key Observations
+                    </h3>
                     <ul className="space-y-2">
                       {card.points.map((point, pointIndex) => (
-                        <li key={pointIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <li
+                          key={pointIndex}
+                          className="flex items-center gap-2 text-sm text-muted-foreground"
+                        >
                           <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                           {point}
                         </li>
                       ))}
                     </ul>
                   </div>
-                  <div className="bg-card/50 rounded-lg p-4">
-                    {card.chart}
-                  </div>
+                  <div className="bg-card/50 rounded-lg p-4">{card.chart}</div>
                 </div>
               </CardContent>
             </Card>
@@ -233,7 +271,10 @@ export default function AnalysisPage() {
           <CardContent>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {keyInsights.map((insight, index) => (
-                <li key={index} className="flex items-center gap-3 text-muted-foreground">
+                <li
+                  key={index}
+                  className="flex items-center gap-3 text-muted-foreground"
+                >
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                   {insight}
                 </li>

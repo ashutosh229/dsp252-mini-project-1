@@ -98,7 +98,7 @@ export default function Header() {
               className="bg-secondary/50 hover:bg-secondary backdrop-blur-sm border-primary/20"
             >
               <Link
-                href="https://colab.research.google.com/drive/1mdawzSTKxJPxwCAOjWy5sp-2SDZTYOvV?usp=sharing"
+                href="https://colab.research.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
@@ -113,7 +113,7 @@ export default function Header() {
               className="bg-secondary/50 hover:bg-secondary backdrop-blur-sm border-primary/20"
             >
               <Link
-                href="https://github.com/ashutosh229/dsp252-mini-project-1"
+                href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"
