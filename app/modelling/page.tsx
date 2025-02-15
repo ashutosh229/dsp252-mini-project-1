@@ -25,52 +25,45 @@ const dataCards = [
 
 const modelCards = [
   {
-    name: "Logistic Regression",
-    hyperparameters: "C=1.0, max_iter=100",
-    accuracy: "85.6%",
-    description: "A simple linear model for classification.",
-    analysisTitle: "Performance on Panic Attack Detection",
-    analysisDesc: "Evaluating model accuracy on test data.",
-    results: "Performed well on balanced datasets.",
-    insights: "Struggles with high-dimensional data.",
-  },
-  {
     name: "Random Forest",
-    hyperparameters: "n_estimators=100, max_depth=10",
-    accuracy: "91.2%",
+    hyperparameters: "n_estimators=100",
+    r2_score: "0.4685",
     description: "An ensemble learning method using decision trees.",
-    analysisTitle: "Robust Classification Performance",
-    analysisDesc: "Handles non-linear relationships effectively.",
+    analysisTitle: "Regression solution for getting Panic Score",
+    analysisDesc: "Feature importance ranking",
     results: "Outperformed other models on noisy data.",
     insights: "More computationally expensive.",
   },
   {
     name: "Gradient Boosting",
-    hyperparameters: "n_estimators=100, max_depth=10",
-    accuracy: "91.2%",
-    description: "An ensemble learning method using decision trees.",
-    analysisTitle: "Robust Classification Performance",
+    hyperparameters: "n_estimators=100, learning_rate=0.01",
+    r2_score: "0.4938",
+    description:
+      "Gradient Boosting is an ensemble machine learning technique used for both classification and regression tasks. It builds a strong predictive model by combining multiple weak learners (typically decision trees) in a sequential manner. Each new tree corrects the mistakes of the previous ones.",
+    analysisTitle: "Regression",
     analysisDesc: "Handles non-linear relationships effectively.",
     results: "Outperformed other models on noisy data.",
     insights: "More computationally expensive.",
   },
   {
     name: "Support Vector Machines (SVR)",
-    hyperparameters: "n_estimators=100, max_depth=10",
-    accuracy: "91.2%",
-    description: "An ensemble learning method using decision trees.",
-    analysisTitle: "Robust Classification Performance",
-    analysisDesc: "Handles non-linear relationships effectively.",
+    hyperparameters: "C=0.1, kernel=linear",
+    r2_score: "0.3960",
+    description:
+      "Support Vector Regression (SVR) is a type of regression model based on Support Vector Machines (SVMs). Unlike traditional regression models that minimize error directly, SVR aims to find a function that fits the data within a certain margin (epsilon, 𝜀), while ignoring small errors.",
+    analysisTitle: "Regression",
+    analysisDesc: "Can model non-linear relationships using kernels",
     results: "Outperformed other models on noisy data.",
     insights: "More computationally expensive.",
   },
   {
     name: "XGBoost",
-    hyperparameters: "n_estimators=100, max_depth=10",
-    accuracy: "91.2%",
-    description: "An ensemble learning method using decision trees.",
-    analysisTitle: "Robust Classification Performance",
-    analysisDesc: "Handles non-linear relationships effectively.",
+    hyperparameters: "n_estimators=100, learning_rate=0.1",
+    r2_score: "0.4790",
+    description:
+      "XGBoost is a powerful machine learning algorithm based on Gradient Boosting, designed for speed and performance. It is widely used in classification, regression, and ranking problems due to its efficiency and accuracy.",
+    analysisTitle: "Regression",
+    analysisDesc: "Fast and efficient",
     results: "Outperformed other models on noisy data.",
     insights: "More computationally expensive.",
   },
@@ -137,7 +130,7 @@ export default function ModellingPage() {
                   <strong>Hyperparameters:</strong> {model.hyperparameters}
                 </p>
                 <p>
-                  <strong>Accuracy:</strong> {model.accuracy}
+                  <strong>Accuracy:</strong> {model.r2_score}
                 </p>
                 <p>
                   <strong>Description:</strong> {model.description}
