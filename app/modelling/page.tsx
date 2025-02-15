@@ -72,9 +72,17 @@ const modelCards = [
 const comparisonCards = [
   {
     title: "Model Performance Comparison",
-    description: "Comparison of accuracy across different models.",
-    image: "/images/model_comparison.png",
-    insights: "Random Forest outperforms Logistic Regression.",
+    description: "Comparison of scores across different models.",
+    image: "/images/modelling/comparison-plot.jpg",
+    insights:
+      "Gradient Boosting comes out to be the most powerful regression model",
+  },
+  {
+    title: "Feature Importance Analysis",
+    description:
+      "Comparison of features in terms of their importance to predict the panic score",
+    image: "/images/modelling/feature-importance.jpg",
+    insights: "Region cluster is the most important feature",
   },
 ];
 
