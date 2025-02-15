@@ -30,7 +30,7 @@ export default function Footer() {
               className="hover:bg-primary/20 hover:text-primary"
             >
               <Link
-                href="https://github.com"
+                href="https://github.com/ashutosh229"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -45,7 +45,7 @@ export default function Footer() {
               className="hover:bg-primary/20 hover:text-primary"
             >
               <Link
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/ashutosh-kumar-jha-601098280/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -60,7 +60,7 @@ export default function Footer() {
               className="hover:bg-primary/20 hover:text-primary"
             >
               <Link
-                href="https://twitter.com"
+                href="https://x.com/ashutoshkj0390"
                 target="_blank"
                 rel="noopener noreferrer"
               >
