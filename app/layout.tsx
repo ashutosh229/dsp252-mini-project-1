@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Data Analytics Project",
   description: "Comprehensive Data Analysis and Visualization",
+  icons: "./title_icon.jpg",
 };
 
 export default function RootLayout({
