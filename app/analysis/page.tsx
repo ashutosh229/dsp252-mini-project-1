@@ -15,9 +15,8 @@ const analysisCards = [
       "Analysis of multiple statistical parameters like mean and median, using box plot",
     icon: TrendingUp,
     points: [
-      "Consistent upward trend observed",
-      "Seasonal patterns identified",
-      "Peak performance in June",
+      "With increase in age, the frequency of attacks decreases",
+      "The duration of the panic attacks is higher in case of old age people",
     ],
     image: "/images/analysis/box-plot.jpg", // Replace with actual image path
   },
@@ -26,9 +25,8 @@ const analysisCards = [
     subtitle: "Category Distribution",
     icon: PieChartIcon,
     points: [
-      "Category B shows highest proportion",
-      "Even distribution across segments",
-      "Minimal outliers detected",
+      "Females are at a higher risk of panic attacks",
+      "The frequency of panic attacks is more in case of females",
     ],
     image: "/images/analysis/pie-chart.jpg", // Replace with actual image path
   },
@@ -37,9 +35,8 @@ const analysisCards = [
     subtitle: "Actual vs Predicted Values",
     icon: Activity,
     points: [
-      "Strong correlation between actual and predicted",
-      "Prediction accuracy improving over time",
-      "Minimal deviation from expected values",
+      "There is enough grouping among the data points since there are 5 clusters formed",
+      "The count of all the clusters is nearly the same",
     ],
     image: "/images/analysis/cluster.jpg", // Replace with actual image path
   },
@@ -48,9 +45,8 @@ const analysisCards = [
     subtitle: "Actual vs Predicted Values",
     icon: Activity,
     points: [
-      "Strong correlation between actual and predicted",
-      "Prediction accuracy improving over time",
-      "Minimal deviation from expected values",
+      "Irregular shaped contours are formed between the age and panic score",
+      "This indicates the presence of irregular trends in the dataset",
     ],
     image: "/images/analysis/countour.jpg", // Replace with actual image path
   },
@@ -58,11 +54,9 @@ const analysisCards = [
 
 const keyInsights = [
   "Strong positive correlation between variables",
-  "Seasonal patterns identified in time series data",
-  "Distribution shows normal characteristics",
-  "Prediction model shows 95% accuracy",
-  "Outliers detected and handled appropriately",
-  "Significant trends observed in monthly data",
+  "Distribution shows irregular characteristics",
+  "Outliers are not present in abundance",
+  "Significant trends observed over multiple age categories and genders",
 ];
 
 export default function AnalysisPage() {
