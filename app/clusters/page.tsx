@@ -27,7 +27,7 @@ const clusters = [
     title: "Dendogram",
     image: "/images/clusters/dendogram.jpg",
     description:
-      "Hierarchical clustering builds a tree of clusters, either through a bottom-up (agglomerative) or top-down (divisive) approach.",
+      "Dendogram is the tree like representation for the hierarchial clustering algorithm and it is used to visualize the clustering results and also getting insights from it and also to get the multiple clusters out of it. ",
   },
 ];
 
