@@ -8,26 +8,26 @@ const correlations = [
   {
     title: "Correlation Heatmap 1",
     image: "/images/correlations/correlations-1.jpg",
-    insights:
-      "Higher heart rates are strongly correlated with increased panic attack frequency. Managing stress and heart rate may help reduce episodes.",
+    // insights:
+    // "Higher heart rates are strongly correlated with increased panic attack frequency. Managing stress and heart rate may help reduce episodes.",
   },
   {
     title: "Correlation Heatmap 2",
     image: "/images/correlations/correlations-2.jpg",
-    insights:
-      "Individuals with fewer sleep hours tend to report higher anxiety levels. Prioritizing sleep can improve mental well-being.",
+    // insights:
+    // "Individuals with fewer sleep hours tend to report higher anxiety levels. Prioritizing sleep can improve mental well-being.",
   },
   {
     title: "Cross Correlations 1",
     image: "/images/correlations/cross-correlations-1.jpg",
-    insights:
-      "Excessive caffeine consumption is linked to heightened panic symptoms, indicating that reducing intake could be beneficial.",
+    // insights:
+    // "Excessive caffeine consumption is linked to heightened panic symptoms, indicating that reducing intake could be beneficial.",
   },
   {
     title: "Cross Correlations 2",
     image: "/images/correlations/cross-correlations-2.jpg",
-    insights:
-      "Excessive caffeine consumption is linked to heightened panic symptoms, indicating that reducing intake could be beneficial.",
+    // insights:
+    // "Excessive caffeine consumption is linked to heightened panic symptoms, indicating that reducing intake could be beneficial.",
   },
 ];
 
@@ -64,9 +64,9 @@ export default function CorrelationsPage() {
                     className="max-w-full h-auto rounded-lg border"
                   />
                 </div>
-                <p className="mt-4">
+                {/* <p className="mt-4">
                   <strong>Insights:</strong> {correlation.insights}
-                </p>
+                </p> */}
               </CardContent>
             </Card>
           </motion.div>
