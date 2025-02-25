@@ -198,11 +198,11 @@ export default function ModellingPage() {
           </CardHeader>
           <CardContent>
             <p>
-              Random Forest performed the best overall, especially on noisy
-              data. Logistic Regression is a viable choice for simpler datasets
-              but struggles with high-dimensionality. Future improvements can be
-              made by tuning hyperparameters or experimenting with neural
-              networks.
+              XGBoost is the fastest model among all and lest expensive in terms
+              of computation power but if we want the predictive power to be
+              more then Gradient Boosting should be the best choice. For the
+              case of simpler datasets, we can also go with simpler regression
+              models like linear regression and all.
             </p>
           </CardContent>
         </Card>
